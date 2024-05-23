@@ -13,6 +13,8 @@ coroutines = "1.3.9"
 retrofit = "2.11.0"
 koin = "3.5.3"
 gson = "2.10.1"
+lottie = "6.4.0"
+glide = "4.16.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -28,6 +30,8 @@ retrofit =  { group = "com.squareup.retrofit2", name = "retrofit", version.ref =
 retrofit-converter =  { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
 koin =  { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
 gson =  { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+lottie =  { group = "com.airbnb.android", name = "lottie", version.ref = "lottie" }
+glide =  { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

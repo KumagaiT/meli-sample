@@ -47,6 +47,8 @@ dependencies {
     implementation(libs.retrofit.converter)
     implementation(libs.koin)
     implementation(libs.gson)
+    implementation(libs.lottie)
+    implementation(libs.glide)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

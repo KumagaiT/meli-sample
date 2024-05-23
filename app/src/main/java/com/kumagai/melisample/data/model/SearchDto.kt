@@ -15,8 +15,20 @@ data class ItemDto(
     @SerializedName("official_store_name") val storeName: String?,
     @SerializedName("price") val price: Double,
     @SerializedName("original_price") val originalPrice: Double?,
-    @SerializedName("accepts_mercadopago") val isMercadoPagoAccepted: Boolean
+    @SerializedName("accepts_mercadopago") val isMercadoPagoAccepted: Boolean,
+    @SerializedName("shipping") val shippingInfo: ShippingDto,
+    @SerializedName("attributes") val attributeList: List<AttributeDto>,
+    @SerializedName("permalink") val permalink: String
 ) : Serializable
+
+data class AttributeDto(
+    @SerializedName("name") val name: String,
+    @SerializedName("value_name") val valueName: String,
+)
+
+data class ShippingDto(
+    @SerializedName("free_shipping") val isFreeShippingAvailable: Boolean
+): Serializable
 
 enum class Currency(val locale: Locale) {
     BRL(Locale("pt", "BR")),

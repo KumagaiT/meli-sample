@@ -2,7 +2,7 @@ package com.kumagai.melisample.di
 
 import com.google.gson.Gson
 import com.kumagai.melisample.data.repository.MeliRepositoryImpl
-import com.kumagai.melisample.data.source.MeliApi
+import com.kumagai.melisample.data.remote.MeliApi
 import com.kumagai.melisample.domain.repository.MeliRepository
 import com.kumagai.melisample.domain.use_case.SearchUseCase
 import com.kumagai.melisample.domain.use_case.SearchUseCaseImpl

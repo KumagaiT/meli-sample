@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">melisample</string>
+    <string name="search_hint">Busca en Mercado Libre</string>
+    <string name="search_action">Buscar</string>
+</resources>

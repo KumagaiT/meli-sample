@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">melisample</string>
+    <string name="app_name" translatable="false">melisample</string>
+    <string name="search_hint">Buscar no Mercado Livre</string>
+    <string name="search_action">Buscar</string>
 </resources>
