@@ -17,8 +17,7 @@ class SearchAdapter(
     private val dataSet: Array<SearchResultItem>,
     private val context: Context,
     private val listener: SearchItemClickListener
-) :
-    RecyclerView.Adapter<SearchAdapter.ViewHolder>() {
+) : RecyclerView.Adapter<SearchAdapter.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val tvItemTitle: TextView = view.findViewById(R.id.tv_item_title)

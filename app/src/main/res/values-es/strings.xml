@@ -6,5 +6,8 @@
     <string name="empty_search_title">No encontramos anuncios</string>
     <string name="empty_search_subtitle">Comprueba si la palabra está escrita correctamente.</string>
     <string name="error_search_subtitle">Vuelve a intentarlo más tarde.</string>
-    <string name="error_search_title">" Error al realizar la búsqueda"</string>
+    <string name="error_search_title">Error al realizar la búsqueda</string>
+    <string name="btn_buy_now">Comprar</string>
+    <string name="free_shipping">Envío gratis</string>
+    <string name="product_attributes">Caracteristicas de producto</string>
 </resources>

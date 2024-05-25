@@ -5,7 +5,8 @@ import java.io.Serializable
 import java.util.Locale
 
 data class SearchDto(
-    @SerializedName("results") val results: List<ItemDto>
+    @SerializedName("results") val results: List<ItemDto>,
+    @SerializedName("query") val query: String
 ) : Serializable
 
 data class ItemDto(
@@ -23,7 +24,7 @@ data class ItemDto(
 
 data class AttributeDto(
     @SerializedName("name") val name: String,
-    @SerializedName("value_name") val valueName: String,
+    @SerializedName("value_name") val valueName: String?,
 )
 
 data class ShippingDto(

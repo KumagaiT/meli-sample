@@ -8,6 +8,7 @@ sealed class SearchState {
     object Loading : SearchState()
 
     data class Success(
+        val query: String,
         val data: List<SearchResultItem>
     ) : SearchState()
 

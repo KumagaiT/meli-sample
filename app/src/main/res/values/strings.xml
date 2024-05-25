@@ -6,4 +6,7 @@
     <string name="empty_search_subtitle">Verifique se a palavra está escrita corretamente.</string>
     <string name="error_search_title">Erro ao realizar busca</string>
     <string name="error_search_subtitle">Tente novamente mais tarde.</string>
+    <string name="btn_buy_now">Comprar</string>
+    <string name="free_shipping">Frete grátis</string>
+    <string name="product_attributes">Características do produto</string>
 </resources>

@@ -7,4 +7,7 @@
     <string name="empty_search_subtitle">Check if the word is spelled correctly.</string>
     <string name="error_search_subtitle">Try again later.</string>
     <string name="error_search_title">Error when performing search</string>
+    <string name="btn_buy_now">Buy</string>
+    <string name="free_shipping">Free shipping</string>
+    <string name="product_attributes">Product characteristics</string>
 </resources>

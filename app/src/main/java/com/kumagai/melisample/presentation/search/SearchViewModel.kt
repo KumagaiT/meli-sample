@@ -28,7 +28,7 @@ class SearchViewModel(
                                 R.string.empty_search_subtitle
                             )
                         } else {
-                            SearchState.Success(it.results)
+                            SearchState.Success(it.query, it.results)
                         }
                     )
                 }
