@@ -31,7 +31,7 @@ class SearchActivity : AppCompatActivity(R.layout.search_activity) {
                 SearchState.Loading -> { }
                 is SearchState.Success -> {
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.fl_fragment_container, SearchResultFragment()).commit()
+                        .replace(R.id.fl_fragment_container, SearchResultFragment()).addToBackStack(null).commit()
                 }
             }
         }
