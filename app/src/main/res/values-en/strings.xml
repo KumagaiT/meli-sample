@@ -3,4 +3,8 @@
     <string name="app_name">melisample</string>
     <string name="search_hint">Search in Meli</string>
     <string name="search_action">Search</string>
+    <string name="empty_search_title">We found no ads</string>
+    <string name="empty_search_subtitle">Check if the word is spelled correctly.</string>
+    <string name="error_search_subtitle">Try again later.</string>
+    <string name="error_search_title">Error when performing search</string>
 </resources>

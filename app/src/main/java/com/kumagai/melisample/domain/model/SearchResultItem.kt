@@ -6,5 +6,10 @@ data class SearchResultItem(
     val storeName: String?,
     val price: String,
     val originalPrice: String?,
-    val isMercadoPagoAccepted: Boolean
+    val isMercadoPagoAccepted: Boolean,
+    val isFreeShippingAvailable: Boolean,
+    val permalink: String,
+    val attributeList: List<ItemAttribute>
 )
+
+data class ItemAttribute(val name: String, val value: String)

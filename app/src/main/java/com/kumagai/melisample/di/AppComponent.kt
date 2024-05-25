@@ -6,7 +6,7 @@ import com.kumagai.melisample.data.remote.MeliApi
 import com.kumagai.melisample.domain.repository.MeliRepository
 import com.kumagai.melisample.domain.use_case.SearchUseCase
 import com.kumagai.melisample.domain.use_case.SearchUseCaseImpl
-import com.kumagai.melisample.presentation.SearchViewModel
+import com.kumagai.melisample.presentation.search.SearchViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 import retrofit2.Retrofit

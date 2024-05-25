@@ -1,4 +1,4 @@
-package com.kumagai.melisample.presentation
+package com.kumagai.melisample.presentation.search
 
 import android.os.Bundle
 import android.view.View
@@ -22,6 +22,7 @@ class SearchResultFragment : Fragment(R.layout.search_result_fragment) {
         rvSearchResult = view.findViewById(R.id.rv_search_result)
 
         val searchState = searchViewModel.searchLiveData.value
+
         if (searchState is SearchState.Success) {
             setRecycleView(searchState.data.toTypedArray())
         } else {
@@ -37,7 +38,7 @@ class SearchResultFragment : Fragment(R.layout.search_result_fragment) {
 
         val layoutManager = LinearLayoutManager(this.context, LinearLayoutManager.VERTICAL, false)
 
-        val adapter = SearchAdapter(dataSet, this.requireContext())
+        val adapter = SearchAdapter(dataSet, this.requireContext(), getOnItemClickListener())
 
         rvSearchResult.run {
             this.addItemDecoration(dividerItemDecoration)
@@ -45,6 +46,13 @@ class SearchResultFragment : Fragment(R.layout.search_result_fragment) {
             this.adapter = adapter
         }
     }
+
+    private fun getOnItemClickListener(): SearchItemClickListener =
+        object : SearchItemClickListener {
+            override fun onItemClick(item: SearchResultItem) {
+                TODO("Not yet implemented")
+            }
+        }
 }
 
 

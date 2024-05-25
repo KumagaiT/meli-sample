@@ -2,4 +2,8 @@
     <string name="app_name" translatable="false">melisample</string>
     <string name="search_hint">Buscar no Mercado Livre</string>
     <string name="search_action">Buscar</string>
+    <string name="empty_search_title">Não encontramos anúncios</string>
+    <string name="empty_search_subtitle">Verifique se a palavra está escrita corretamente.</string>
+    <string name="error_search_title">Erro ao realizar busca</string>
+    <string name="error_search_subtitle">Tente novamente mais tarde.</string>
 </resources>

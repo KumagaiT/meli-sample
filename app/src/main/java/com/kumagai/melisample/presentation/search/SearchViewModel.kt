@@ -1,12 +1,11 @@
-package com.kumagai.melisample.presentation
+package com.kumagai.melisample.presentation.search
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.kumagai.melisample.domain.model.SearchResultItem
+import com.kumagai.melisample.R
 import com.kumagai.melisample.domain.use_case.SearchUseCase
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -24,14 +23,23 @@ class SearchViewModel(
                 .onSuccess {
                     _searchLiveData.postValue(
                         if (it.results.isEmpty()) {
-                            SearchState.Empty
+                            SearchState.Error(
+                                R.string.empty_search_title,
+                                R.string.empty_search_subtitle
+                            )
                         } else {
                             SearchState.Success(it.results)
                         }
                     )
                 }
                 .onFailure {
-                    _searchLiveData.postValue(SearchState.Error)
+                    _searchLiveData.postValue(
+                        SearchState.Error(
+                            R.string.error_search_title,
+                            R.string.error_search_subtitle,
+                            R.color.error_red
+                        )
+                    )
                 }
         }
     }

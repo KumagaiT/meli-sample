@@ -3,4 +3,8 @@
     <string name="app_name">melisample</string>
     <string name="search_hint">Busca en Mercado Libre</string>
     <string name="search_action">Buscar</string>
+    <string name="empty_search_title">No encontramos anuncios</string>
+    <string name="empty_search_subtitle">Comprueba si la palabra está escrita correctamente.</string>
+    <string name="error_search_subtitle">Vuelve a intentarlo más tarde.</string>
+    <string name="error_search_title">" Error al realizar la búsqueda"</string>
 </resources>
