@@ -21,6 +21,7 @@ class ProductPageActivity : AppCompatActivity(R.layout.product_page_activity) {
     private val tvProductImage: ImageView by lazy { findViewById(R.id.iv_product_image) }
     private val tvProductOriginalPrice: TextView by lazy { findViewById(R.id.tv_product_original_price) }
     private val tvProductPrice: TextView by lazy { findViewById(R.id.tv_product_price) }
+    private val tvShipping: TextView by lazy { findViewById(R.id.tv_free_shipping) }
     private val btnBuy: Button by lazy { findViewById(R.id.btn_buy_now) }
     private val rvProductAttribute: RecyclerView by lazy { findViewById(R.id.rv_product_attributes) }
     private val tvProductAttributeTitle: TextView by lazy { findViewById(R.id.tv_product_attributes_title) }
@@ -51,6 +52,8 @@ class ProductPageActivity : AppCompatActivity(R.layout.product_page_activity) {
             }
 
             tvProductPrice.text = item.price
+
+            tvShipping.visibility = if (item.isFreeShippingAvailable) View.VISIBLE else View.GONE
 
             if (item.attributeList.isEmpty()) {
                 tvProductAttributeTitle.visibility = View.GONE
