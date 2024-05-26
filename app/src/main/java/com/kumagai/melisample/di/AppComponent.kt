@@ -7,6 +7,7 @@ import com.kumagai.melisample.domain.repository.MeliRepository
 import com.kumagai.melisample.domain.use_case.SearchUseCase
 import com.kumagai.melisample.domain.use_case.SearchUseCaseImpl
 import com.kumagai.melisample.presentation.search.SearchViewModel
+import kotlinx.coroutines.Dispatchers
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 import retrofit2.Retrofit
@@ -28,5 +29,7 @@ val appModule = module {
 
     single<SearchUseCase> { SearchUseCaseImpl(get()) }
 
-    viewModel { SearchViewModel(get()) }
+    viewModel { SearchViewModel(get(), get()) }
+
+    single { Dispatchers.IO }
 }

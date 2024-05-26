@@ -6,18 +6,20 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.kumagai.melisample.R
 import com.kumagai.melisample.domain.use_case.SearchUseCase
+import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class SearchViewModel(
-    private val searchUseCase: SearchUseCase
+    private val searchUseCase: SearchUseCase,
+    private val coroutineDispatcher: CoroutineDispatcher
 ) : ViewModel() {
 
     private val _searchLiveData = MutableLiveData<SearchState>()
     val searchLiveData: LiveData<SearchState> get() = _searchLiveData
 
     fun searchItems(query: String) {
-        viewModelScope.launch(Dispatchers.IO) {
+        viewModelScope.launch(coroutineDispatcher) {
             _searchLiveData.postValue(SearchState.Loading)
             searchUseCase.invoke(query)
                 .onSuccess {
