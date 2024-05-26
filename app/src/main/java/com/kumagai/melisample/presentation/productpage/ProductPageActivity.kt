@@ -1,4 +1,4 @@
-package com.kumagai.melisample.presentation.pdp
+package com.kumagai.melisample.presentation.productpage
 
 import android.content.Intent
 import android.graphics.Paint

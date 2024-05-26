@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.kumagai.melisample.R
 import com.kumagai.melisample.domain.model.SearchResultItem
-import com.kumagai.melisample.presentation.pdp.ProductPageActivity
-import com.kumagai.melisample.presentation.pdp.ProductPageActivity.Companion.ITEM_EXTRA_KEY
+import com.kumagai.melisample.presentation.productpage.ProductPageActivity
+import com.kumagai.melisample.presentation.productpage.ProductPageActivity.Companion.ITEM_EXTRA_KEY
 
 class SearchResultFragment : Fragment(R.layout.search_result_fragment) {
 

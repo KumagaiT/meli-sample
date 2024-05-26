@@ -1,4 +1,4 @@
-package com.kumagai.melisample.presentation.pdp
+package com.kumagai.melisample.presentation.productpage
 
 import android.view.LayoutInflater
 import android.view.View
